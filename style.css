@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#contenedorPrincipal{
+    width: 60vw;
+    height: 80vh;
+    margin: 10vh 0 0 20vw;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+form{
+    border: 1px solid black;
+    width: 25vw;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#contenedorLinks{
+    width: 20vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+a {
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(204, 187, 187);
+    font-size: 1.5rem;
+    padding: 4px;
+}
+
+#saludo{
+    width: 25vw;
+    font-size: 1.2rem;
+}
+#contenedorPrincipalTarea3{
+    width: 80vw;
+    height: 90vh;
+    margin: 5vh 0 0 10vw;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#contenedorTiempos{
+    width: 70vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.tiemposClases{
+    width: 12vw;
+    height: 30vh;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.tiemposClases input{
+    width: 10vw;
+}
+#sumaTotal{
+    width: 40vw;
+    height: 5vh;
+    font-size: 1.2rem;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tiemposClases h3{
+    text-decoration: underline;
+}
+#contenedorPrincipalTarea3 button {
+    font-size: 1.5rem;
+    padding: 5px;
+}
+#listaOrdenada{
+    height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
