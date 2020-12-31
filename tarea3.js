@@ -9,12 +9,18 @@ let totalMinutos = 0;
 let totalSegundos = 0;
 
 botonCalculo.onclick = function () {
-  for (i = 0; i < 5; i++) {
-    totalHoras = totalHoras + Number(horas[i].value);
-    totalMinutos = totalMinutos + Number(minutos[i].value);
+  for (i = 0; i < horas.length; i++) {
+    totalHoras = totalHoras + Number(horas[i].value) * 3600;
+    totalMinutos = totalMinutos + Number(minutos[i].value) * 60;
     totalSegundos = totalSegundos + Number(segundos[i].value);
   }
-  resultadoTotal.innerHTML = `La suma total es de ${totalHoras} horas ${totalMinutos} minutos y ${totalSegundos} segundos`;
+let sumaTiempos = totalHoras + totalMinutos + totalSegundos;
+
+let horasFinal = Math.floor(sumaTiempos/3600)
+let minutosFinal = Math.floor( (sumaTiempos % 3600) / 60)
+let segundosFinal = sumaTiempos - horasFinal*3600 - minutosFinal*60
+
+  resultadoTotal.innerHTML = `La suma total es de ${horasFinal} horas ${minutosFinal} minutos y ${segundosFinal} segundos`;
   botonCalculo.disabled=true;
   return false;
 };
